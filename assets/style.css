@@ -2,6 +2,25 @@
     box-sizing: border-box;
     font-family: Courier, sans-serif;
     font-size: 20px;
+    font-weight: 900;
+   
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.my_image {
+    width: 45%;
+    height: auto;
+    text-align: right;
+    
+}
+.my_resume {
+    text-align: center;
+    margin-right: 200px;
+    width: 25%;
+    height: auto;
 }
 body {
     background-image: linear-gradient(95deg, rgb(246, 120, 246), rgb(248, 97, 97));
@@ -17,6 +36,7 @@ h1 {
 }
 
 h2{font-size: 40px;}
+
 .across {
     display: inline-flex;
     justify-content: space-around;
@@ -41,7 +61,6 @@ h2{font-size: 40px;}
     height: auto;
 }
 em {text-decoration: underline;}
-abbr {}
 
 .center {
         display: block;
@@ -58,12 +77,22 @@ abbr {}
     right: 18px;
     padding: 5px;
 }
-header,
-footer {
+header {
     background-color: var(--head-foot-color);
-    color: blanchedalmond;
+    color: #b4eeb4;
+    padding: 18px;
+    
 }    
 
+footer {
+    background-color: var(--head-foot-color);
+    color: #b4eeb4;
+    text-align: center;
+    padding: 12px;
+    margin-top: 85px;
+    margin-bottom: 85px; 
+    
+}
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -72,6 +101,16 @@ nav {
     justify-content: space-around;
     border: 2px solid var(--division-color) ;
     padding: 10px;
+}
+
+.contactlinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+    text-align: center;
+    justify-content: space-around;
+    border: 4px;
+    padding: 40px;
 }
 .card {border: 8px transparent;
        padding: 40px;
@@ -86,35 +125,63 @@ nav {
         width:100%;
         height: auto;
     }
+    .center { max-width: 70%;}
+
     .across {
         display: block;
- 
+        max-width: 70%;
+        min-width: 20%;
         padding: 60px;
         margin-left: auto;
         margin-right: auto;    
     }
   }
-  
+  .img-cir {border-radius: 50%;
+            width: 20%;}
+
+.contact_section { border: 8px transparent;
+                   padding: 40px; 
+                   display: flex;
+
+
+}
   @media screen and (max-width: 768px) {
     header {
         background: var(--mobile-background);
       }
+
+    .contactlinks,
     nav {
       flex-direction: column;
+      margin: 0;
+      line-height: 2;
     }
-    footer img {
-        width:25%;
-        height: auto;
+    .container {
+        flex-direction: column;
+       
     }
-  }
+    .img-cir{width: 175%;
+        margin-left: 60px;
+}
+    .my_resume {
+        text-align: center;
+        width: 100%;
+    }
+    h2,p {text-align: center;
+}
+  
   
   @media screen and (max-width: 576px) {
     header {
         background: var(--mobile-background);
       } 
     
-    nav {
+    nav,
+    .contactlinks {
         flex-direction: column;
-        background: aqua;
+        /* background: rgb(134, 108, 36); */
+        
     }
+   * {color: rgb(196, 234, 197);
+background-color: brown;}
 }
