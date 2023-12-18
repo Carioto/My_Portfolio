@@ -36,16 +36,12 @@ h2 {
 }
 .my_resume {
     text-align: center;
-    margin-right: 100px;
     width: 40%;
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
-.my_resume p,
-.my_resume a {
-    font-size: 125%;
-}
+
 .across {
     display: inline-flex;
     justify-content: space-around;
@@ -75,7 +71,7 @@ span {
     color: white;
     position: fixed;
     bottom: 18px;
-    right: 18px;
+    right: 8px;
     padding: 5px;
 }
 header {
@@ -120,6 +116,9 @@ nav {
     header {
         background: var(--mobile-background);
     }
+    h1 {
+        font-size: 50px;
+    }
     img {
         width:100%;
         height: auto;
@@ -148,7 +147,7 @@ nav {
         flex-direction: column;
     }
     .img-cir {
-            width: 175%;
+        width: 175%;
     }
     .my_resume, h2, p {
         text-align: center;
@@ -164,9 +163,12 @@ nav {
         margin: 0;
         line-height: 2;
     }
+    h1 { 
+        font-size: 40px;
+    }
     body {
         background-image: none;
-        background-color: brown;
+        background-color:rgb(226, 78, 78);
         color: rgb(196, 234, 197);        
     }
     .card {
@@ -175,15 +177,35 @@ nav {
 }
   
   @media screen and (max-width: 576px) {
-    header {
+    header,
+    footer {
         text-align: center;
-        /* background: var(--mobile-background); */
+        background: transparent;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    nav {
+        margin: 25px;
     } 
     nav, .contactlinks {
         flex-direction: column;
-        /* background: rgb(134, 108, 36); */
     }
    * {
-        background-color: brown;
+    background-color: rgb(226, 78, 78);
     }
+    .my_resume p,
+    .my_resume a {
+    font-size: 100%;
+    width: 90%;
+    }
+.my_resume h2 {
+    text-align: center;
+    width: 90%;
+    }
+.burst {
+    width: 90%;
+    margin-left: 25px;
+    }
+.jump-up {display: none;}
 }
