@@ -128,6 +128,8 @@ abbr{
     .across_subprojects {
         flex-direction: column;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .my_image {
         width: 100%;
@@ -154,16 +156,15 @@ abbr{
     body {
         background-color: rgb(243, 167, 117);
     }
-    .center { 
+    .center
+     { 
         width: 100%;
     }
 .jump-up {
         display: none;
     }
-.across_subprojects {
-        height: 33%;
-    }
 .spacey  {
         line-height: 2.5;
     }
+.card {margin: 0;} 
 }
