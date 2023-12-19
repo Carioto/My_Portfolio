@@ -2,77 +2,13 @@
     box-sizing: border-box;
     font-family: Courier, sans-serif;
     font-size: 20px;
-    font-weight: 900;    
+    font-weight: 900;  
 }
-body {
-    background-image: linear-gradient(95deg, rgb(136, 234, 162), rgb(244, 188, 90));
-}
+body {background-color: rgb(135,187,162,.5);}
 :root {
     --head-foot-color:#a60c82;
     --division-color: rgb(10, 6, 83);
     --mobile-background: rgb(78, 140, 240);
-}
-h1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 75px;
-}
-h2 {
-    font-size: 40px;
-}
-.container {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: 30px;
-}
-.img-cir {
-    border-radius: 35%;
-    width: 50%;
-}
-.my_image {
-    width: 50%;
-    height: auto;
-    text-align: right;   
-}
-.my_resume {
-    text-align: center;
-    width: 40%;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.across {
-    display: inline-flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 20px;    
-}
-.burst {
-    display: flex;
-    width: 100%;
-    height: auto;
-}
-ul img {
-    width: 100%;
-}
-span {
-    text-decoration: underline;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} 
-.jump-up {
-    border: 1px solid --division-color;
-    background: var(--head-foot-color);
-    color: white;
-    position: fixed;
-    bottom: 18px;
-    right: 8px;
-    padding: 5px;
 }
 header {
     background-color: var(--head-foot-color);
@@ -96,22 +32,84 @@ nav {
     border: 2px solid var(--division-color) ;
     padding: 10px;
 }
-.contactlinks {
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 75px;
+}
+h2 {
+    font-size: 40px;
+}
+.jump-up {
+    border: 1px solid --division-color;
+    background: var(--head-foot-color);
+    color: white;
+    position: fixed;
+    bottom: 18px;
+    right: 8px;
+    padding: 5px;
+}
+.burst {
     display: flex;
-    flex-wrap: wrap;
-    margin: 3%;
-    text-align: center;
-    justify-content: space-around;
-    border: 4px;
-    padding: 40px;
+    width: 100%;
+    height: auto;
+}
+.burst img {
+    width: 33%;
 }
 .card {
-    border: 8px transparent;
     line-height: 1.25;
-    margin: 25px;
+    margin: 30px;
 }
-
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.across_subprojects {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;    
+}
+.container {
+    display: flex;
+    height: auto;
+    margin: 30px auto;
+}
+.contactlinks {
+    width: 33%;
+    text-align: center;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 150px;
+    line-height: 1.5;
+}
+.my_image {
+    width: 33%;
+    height: auto;
+    text-align: center;
+}
+.img-cir {
+    border-radius: 35%;
+    width: 50%;
+}
+.my_resume {
+    text-align: center;
+    width: 33%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 250px;
+    line-height: 2;
+}
+span {
+    text-decoration: underline;
+}
+abbr{
+    cursor: help;
+}
 @media screen and (max-width: 992px) {
     header {
         background: var(--mobile-background);
@@ -119,93 +117,53 @@ nav {
     h1 {
         font-size: 50px;
     }
-    img {
-        width:100%;
-        height: auto;
-    }
-    .center {
-        max-width: 70%;
-    }
-    .across {
-        display: block;
-        max-width: 70%;
-        min-width: 20%;
-        padding: 60px;
-        margin-left: auto;
-        margin-right: auto;    
-    }
-   .img-cir {
-        border-radius: 50%;
-        width: 20%;
-    }
-    .contact_section { 
-        border: 8px transparent;
-        padding: 40px; 
-        display: flex;
-    }
     .container {
         flex-direction: column;
     }
-    .img-cir {
-        width: 175%;
+    .contactlinks {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+   }
+    .across_subprojects {
+        flex-direction: column;
+        text-align: center;
+    }
+    .my_image {
+        width: 100%;
     }
     .my_resume, h2, p {
         text-align: center;
         width: 100%;
+        padding-right: 0px;
     }
 }
-  @media screen and (max-width: 768px) {
-    header {
-        background: var(--mobile-background);
-    }
-    .contactlinks, nav {
-        flex-direction: column;
-        margin: 0;
-        line-height: 2;
-    }
-    h1 { 
-        font-size: 40px;
-    }
-    body {
-        background-image: none;
-        background-color:rgb(226, 78, 78);
-        color: rgb(196, 234, 197);        
-    }
-    .card {
-        border: 1px solid black;
-    }
-}
-  
   @media screen and (max-width: 576px) {
     header,
     footer {
         text-align: center;
         background: transparent;
+        color: black;
     }
     h1 {
         font-size: 30px;
     }
-    nav {
-        margin: 25px;
-    } 
     nav, .contactlinks {
         flex-direction: column;
     }
-   * {
-    background-color: rgb(226, 78, 78);
+    body {
+        background-color: rgb(243, 167, 117);
     }
-    .my_resume p,
-    .my_resume a {
-    font-size: 100%;
-    width: 90%;
+    .center { 
+        width: 100%;
     }
-.my_resume h2 {
-    text-align: center;
-    width: 90%;
+.jump-up {
+        display: none;
     }
-.burst {
-    width: 90%;
-    margin-left: 25px;
+.across_subprojects {
+        height: 33%;
     }
-.jump-up {display: none;}
+.spacey  {
+        line-height: 2.5;
+    }
 }
