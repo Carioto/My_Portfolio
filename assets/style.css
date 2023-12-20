@@ -78,6 +78,9 @@ h3 {
     width: 35%;
     text-align: center;
 }
+.centerTag {
+    text-align: center;
+}
 .across_subprojects {
     display: inline-flex;
     justify-content: space-around;
@@ -149,7 +152,7 @@ abbr {
     .my_image {
         width: 100%;
     }
-    .my_resume, h2, p {
+    .my_resume, h2, p, img {
         text-align: center;
         width: 100%;
         padding-right: 0px;
@@ -162,6 +165,7 @@ abbr {
         background: transparent;
         color: black;
     }
+    
     h1 {
         font-size: 30px;
     }
@@ -174,6 +178,7 @@ abbr {
     .center { 
         width: 100%;
     }
+    
 .jump-up {
         display: none;
     }
@@ -181,6 +186,6 @@ abbr {
         line-height: 2.5;
     }
 .card {
-    margin: 0;
+        margin: 0;
     } 
 }
