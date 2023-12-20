@@ -34,8 +34,12 @@ nav {
     border: 2px solid var(--division-color) ;
     padding: 10px;
 }
-nav a:hover::before {content:"🢒";}
-nav a:hover::after {content:"🢐";}
+nav a:hover::before {
+    content:"🢒";
+}
+nav a:hover::after {
+    content:"🢐";
+}
 h1 {
     font-family: Helvetica, sans-serif;
     font-size: 75px;
@@ -72,9 +76,8 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    text-align: center;
 }
-figcaption {text-align: center;}
-
 .across_subprojects {
     display: inline-flex;
     justify-content: space-around;
@@ -136,7 +139,7 @@ abbr {
         text-align: center;
         width: 100%;
         padding: 0px;
-   }
+    }
     .across_subprojects {
         flex-direction: column;
         text-align: center;
@@ -168,8 +171,7 @@ abbr {
     body {
         background-color: rgb(243, 167, 117);
     }
-    .center
-     { 
+    .center { 
         width: 100%;
     }
 .jump-up {
