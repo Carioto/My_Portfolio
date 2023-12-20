@@ -34,6 +34,8 @@ nav {
     border: 2px solid var(--division-color) ;
     padding: 10px;
 }
+nav a:hover::before {content:"🢒";}
+nav a:hover::after {content:"🢐";}
 h1 {
     font-family: Helvetica, sans-serif;
     font-size: 75px;
@@ -69,13 +71,16 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
 }
+figcaption {text-align: center;}
+
 .across_subprojects {
     display: inline-flex;
     justify-content: space-around;
     width: 100%;
-    padding: 20px;    
+    padding: 40px 100px;
+    text-align: center;
 }
 .container {
     display: flex;
