@@ -4,7 +4,9 @@
     font-size: 20px;
     font-weight: 900;  
 }
-body {background-color: rgb(135,187,162,.5);}
+body {
+    background-color: rgb(135,187,162,.5);
+}
 :root {
     --head-foot-color:#a60c82;
     --division-color: rgb(10, 6, 83);
@@ -39,6 +41,9 @@ h1 {
 h2 {
     font-size: 40px;
 }
+h3 {
+    font-size: 30px;
+}
 .jump-up {
     border: 1px solid --division-color;
     background: var(--head-foot-color);
@@ -54,7 +59,7 @@ h2 {
     height: auto;
 }
 .burst img {
-    width: 33%;
+    width: 33.33%;
 }
 .card {
     line-height: 1.25;
@@ -83,8 +88,10 @@ h2 {
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 150px;
-    line-height: 1.5;
+    padding-left: 125px;
+}
+.spacey {
+    line-height: 1.5; 
 }
 .my_image {
     width: 33%;
@@ -101,13 +108,13 @@ h2 {
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding-right: 250px;
-    line-height: 2;
+    padding-right: 175px;
+    line-height: 1.3;
 }
 span {
     text-decoration: underline;
 }
-abbr{
+abbr {
     cursor: help;
 }
 @media screen and (max-width: 992px) {
@@ -166,5 +173,7 @@ abbr{
 .spacey  {
         line-height: 2.5;
     }
-.card {margin: 0;} 
+.card {
+    margin: 0;
+    } 
 }
