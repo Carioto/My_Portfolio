@@ -18,12 +18,21 @@ header {
     padding: 18px;
 }    
 footer {
+    
     background-color: var(--head-foot-color);
     color: #b4eeb4;
     text-align: center;
     padding: 12px;
     margin-top: 85px;
     margin-bottom: 85px; 
+}
+.foot {
+    position: relative;
+}
+.foot img {
+    position: absolute;
+    top:5px;
+    left: 35%;
 }
 nav {
     display: flex;
@@ -128,6 +137,13 @@ span {
 abbr {
     cursor: help;
 }
+@media screen and (max-width: 1579px){
+.foot img {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+}
 @media screen and (max-width: 992px) {
     header {
         background: var(--mobile-background);
@@ -157,12 +173,12 @@ abbr {
         width: 100%;
         padding-right: 0px;
     }
+    
 }
   @media screen and (max-width: 576px) {
     header,
     footer {
         text-align: center;
-        background: transparent;
         color: black;
     }
     
@@ -179,13 +195,18 @@ abbr {
         width: 100%;
     }
     
-.jump-up {
+    .jump-up {
         display: none;
     }
-.spacey  {
+    .spacey  {
         line-height: 2.5;
     }
-.card {
+    .card {
         margin: 0;
+    }
+    .foot img {
+        width: auto;
     } 
 }
+
+
